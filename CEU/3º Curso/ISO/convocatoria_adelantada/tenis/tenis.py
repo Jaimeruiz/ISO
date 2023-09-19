@@ -171,11 +171,12 @@ class Partido():
             else:
                 return "PARTIDO FINALIZADO, GANA EL JUGADOR B"
 
-partido = Partido()
-partido.introducir_sets()
-print(partido.calcular_marcador(partido.marcador))
-print(partido.resultado(partido.setsA,partido.setsB,partido.sets,partido.breaksA,
-      partido.breaksB,partido.puntosA,partido.puntosB))
+if __name__ == "__main__":
+    partido = Partido()
+    partido.introducir_sets()
+    print(partido.calcular_marcador(partido.marcador))
+    print(partido.resultado(partido.setsA,partido.setsB,partido.sets,partido.breaksA,
+          partido.breaksB,partido.puntosA,partido.puntosB))
 
 
 

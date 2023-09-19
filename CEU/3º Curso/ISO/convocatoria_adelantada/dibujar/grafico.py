@@ -54,7 +54,6 @@ class Dibujo():
                 self.ventana.bye()
             else:
                 print("COMANDO no válido")
-"""
-dibujo = Dibujo()
-turtle.done()
-"""
+if __name__ == "__main__":
+    dibujo = Dibujo()
+    turtle.done()

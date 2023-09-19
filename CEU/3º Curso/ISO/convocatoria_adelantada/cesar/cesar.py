@@ -132,7 +132,8 @@ class Cesar():
         except FileNotFoundError:
             print(f"No se encontró el archivo '{contenido_descifrado}'.")
 
-cesar = Cesar()
-print(cesar.cifrar("Hola, me llamo Jaime", 16))
+if __name__ == "__main__":
+    cesar = Cesar()
+    print(cesar.cifrar("Hola, me llamo Jaime", 16))
 
 

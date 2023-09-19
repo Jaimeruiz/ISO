@@ -13,7 +13,7 @@ class Partida():
         return carta
 
 
-    def calcular_puntaje(self, mano, valores):
+    def calcular_puntaje(self, mano, valores): #PARA MANEJAR LA PUNTUACION Y EL VALOR DEL AS (1 O 11) SEGUN BENEFICIE MAS A LA JUGADA.
         """Calcula el puntaje de una mano de cartas."""
         puntaje = 0
         ases = 0
@@ -75,6 +75,6 @@ class Partida():
             else:
                 print("Opción no válida. Por favor, elige 'p' para pedir carta o 'pl' para plantarte.")
 
-
-partida = Partida()
-partida.jugar_blackjack()
+if __name__ == "__main__":
+    partida = Partida()
+    partida.jugar_blackjack()
