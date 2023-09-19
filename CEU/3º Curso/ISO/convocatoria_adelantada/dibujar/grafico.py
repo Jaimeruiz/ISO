@@ -31,7 +31,9 @@ class Dibujo():
 
     def dibujar(self, comandos):
         for i in comandos:
-            if i == "ABJ":
+            if i == "LAP":
+                self.lapiz.pen()
+            elif i == "ABJ":
                 self.lapiz.pendown()
             elif i == "ARR":
                 self.lapiz.penup()
